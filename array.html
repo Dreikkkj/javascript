@@ -1,0 +1,55 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+
+        <script>
+
+            const notas = [8, 7.5, 10];
+            const nomes = ["Ana", "Bruno", "Carla"];
+
+            console.log(notas[0]); // 8
+            console.log(nomes.length); // 3
+
+//sempre q criar um objeto, usaremos as chaves
+            const paginaInsta = {
+                nome: "Ronaldo",
+                bio: "Sou de humanas gosto de flores",
+                foto: ":)",
+                arroba: "ronaldinho_da_bola_azul"
+            }
+
+            console.log(`Meu nome é ${paginaInsta["nome"]} e meu arroba é ${paginaInsta["arroba"]}`)
+            // OU
+            // console.log(`Meu nome é ${paginaInsta.nome} e meu arroba é ${paginaInsta.arroba}`)
+
+            const carrinho = [
+                {
+                nome: "Faca Guinzo",
+                valor: 299.99,
+                tag: ["Em Alta", "Cozinha", "Desconto"]
+                },
+                {
+                nome: "Memória Ram",
+                valor: 600,
+                tag: ["Em Alta", "Tech"]
+                },
+                {
+                nome: "Cama Box",
+                valor: 1200,
+                tag: ["Em Alta", "Ultima", "Conforto"]
+                },
+            ]
+
+            //Arrow Function
+            let somaTotal = 0
+            carrinho.map(produto => {
+                somaTotal += produto.valor
+            })
+            console.log(`A soma é: ${somaTotal}`);
+
+        </script>
+    </body>
+</html>
